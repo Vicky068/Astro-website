@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online - Astro90</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 6px;"></i>Astro90</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="horoscope.html">Horoscope</a></li>
+                    <li><a href="kundli.html">Kundli</a></li>
+                    <li><a href="matching.html">Matching</a></li>
+                    <li><a href="panchang.html">Panchang</a></li>
+                    <li><a href="numerology.html">Numerology</a></li>
+                    <li><a href="tarot.html">Tarot</a></li>
+                    <li><a href="remedies.html">Remedies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="animate-fade-up">Book Your Consultation</h1>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="animate-fade-up animate-delay-400">Schedule your personalized astrological reading with Sid</p>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-intro animate-fade-up">
+                    <p>Choose from our range of services, select a convenient date and time, and provide your details to book your consultation. All consultations are conducted online via video call or phone.</p>
+                </div>
+
+                <div class="booking-steps">
+                    <div class="booking-step active" id="step-1">
+                        <div class="step-indicator animate-fade-up">
+                            <span class="step-number">1</span>
+                            <span class="step-title">Select Service</span>
+                        </div>
+                        
+                        <div class="step-content animate-fade-up animate-delay-200">
+                            <div class="service-selection">
+                                <div class="service-categories">
+                                    <button class="service-category active" data-category="popular">Popular Services</button>
+                                    <button class="service-category" data-category="personal">Personal Readings</button>
+                                    <button class="service-category" data-category="relationship">Relationship</button>
+                                    <button class="service-category" data-category="career">Career & Finance</button>
+                                    <button class="service-category" data-category="remedial">Remedial Measures</button>
+                                </div>
+                                
+                                <div class="service-options-container">
+                                    <div class="service-options active" id="popular-services">
+                                        <div class="service-option">
+                                            <input type="radio" name="service" id="janam-kundli" value="Janam Kundli Analysis" data-price="120" checked>
+                                            <label for="janam-kundli">
+                                                <div class="service-option-content">
+                                                    <div class="service-option-icon">
+                                                        <img src="images/janamkundali.png" alt="Janam Kundli" class="animate-pulse-subtle">
+                                                    </div>
+                                                    <div class="service-option-details">
+                                                        <span class="service-name">Janam Kundli Analysis</span>
+                                                        <span class="service-description">Comprehensive birth chart analysis</span>
+                                                        <div class="service-meta">
+                                                            <span class="service-duration"><i class="far fa-clock"></i> 60 minutes</span>
+                                                            <span class="service-price">$120</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="service-option">
+                                            <input type="radio" name="service" id="kundali-matching" value="Kundali Matching" data-price="99">
+                                            <label for="kundali-matching">
+                                                <div class="service-option-content">
+                                                    <div class="service-option-icon">
+                                                        <img src="images/kundli.jpg" alt="Kundali Matching" class="animate-pulse-subtle">
+                                                    </div>
+                                                    <div class="service-option-details">
+                                                        <span class="service-name">Kundali Matching</span>
+                                                        <span class="service-description">Compatibility analysis for couples</span>
+                                                        <div class="service-meta">
+                                                            <span class="service-duration"><i class="far fa-clock"></i> 45 minutes</span>
+                                                            <span class="service-price">$99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="service-option">
+                                            <input type="radio" name="service" id="annual-forecast" value="Annual Forecast" data-price="150">
+                                            <label for="annual-forecast">
+                                                <div class="service-option-content">
+                                                    <div class="service-option-icon">
+                                                        <img src="images/panchang.avif" alt="Annual Forecast" class="animate-pulse-subtle">
+                                                    </div>
+                                                    <div class="service-option-details">
+                                                        <span class="service-name">Annual Forecast</span>
+                                                        <span class="service-description">Year-ahead predictions and guidance</span>
+                                                        <div class="service-meta">
+                                                            <span class="service-duration"><i class="far fa-clock"></i> 75 minutes</span>
+                                                            <span class="service-price">$150</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Other service categories would be here -->
+                                </div>
+                            </div>
+                            
+                            <div class="step-navigation">
+                                <button class="btn primary-btn next-step" data-next="step-2">Continue to Date & Time</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-step" id="step-2">
+                        <div class="step-indicator animate-fade-up">
+                            <span class="step-number">2</span>
+                            <span class="step-title">Select Date & Time</span>
+                        </div>
+                        
+                        <div class="step-content animate-fade-up animate-delay-200">
+                            <div class="datetime-selection">
+                                <div class="calendar-wrapper">
+                                    <div class="calendar-header">
+                                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                                        <h3 id="current-month">September 2023</h3>
+                                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="calendar-days" id="calendar-days">
+                                        <!-- Calendar days will be generated by JavaScript -->
+                                    </div>
+                                </div>
+                                
+                                <div class="time-slots-wrapper">
+                                    <h3>Available Times</h3>
+                                    <div class="selected-date-display" id="selected-date-display">
+                                        Please select a date
+                                    </div>
+                                    <div class="time-slots-container" id="time-slots">
+                                        <p class="select-date-message">Please select a date first</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-navigation">
+                                <button class="btn secondary-btn prev-step" data-prev="step-1">Back to Services</button>
+                                <button class="btn primary-btn next-step" data-next="step-3">Continue to Your Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-step" id="step-3">
+                        <div class="step-indicator animate-fade-up">
+                            <span class="step-number">3</span>
+                            <span class="step-title">Your Details</span>
+                        </div>
+                        
+                        <div class="step-content animate-fade-up animate-delay-200">
+                            <form id="booking-form" class="form-container">
+                                <div class="form-columns">
+                                    <div class="form-column">
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone</label>
+                                            <input type="tel" id="phone" name="phone" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-column">
+                                        <div class="birth-details">
+                                            <h3>Birth Details (for accurate readings)</h3>
+                                            <div class="form-group">
+                                                <label for="birth-date">Date of Birth</label>
+                                                <input type="date" id="birth-date" name="birth-date" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="birth-time">Time of Birth (if known)</label>
+                                                <input type="time" id="birth-time" name="birth-time">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="birth-place">Place of Birth</label>
+                                                <input type="text" id="birth-place" name="birth-place" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="questions">Specific Questions or Concerns</label>
+                                    <textarea id="questions" name="questions" rows="4"></textarea>
+                                </div>
+                                
+                                <div class="booking-summary">
+                                    <h3>Booking Summary</h3>
+                                    <div class="summary-details">
+                                        <div class="summary-row">
+                                            <span class="summary-label">Service:</span>
+                                            <span class="summary-value" id="summary-service">Janam Kundli Analysis</span>
+                                        </div>
+                                        <div class="summary-row">
+                                            <span class="summary-label">Date:</span>
+                                            <span class="summary-value" id="summary-date">Not selected</span>
+                                        </div>
+                                        <div class="summary-row">
+                                            <span class="summary-label">Time:</span>
+                                            <span class="summary-value" id="summary-time">Not selected</span>
+                                        </div>
+                                        <div class="summary-row">
+                                            <span class="summary-label">Price:</span>
+                                            <span class="summary-value" id="summary-price">$120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-navigation">
+                                    <button type="button" class="btn secondary-btn prev-step" data-prev="step-2">Back to Date & Time</button>
+                                    <button type="submit" class="btn primary-btn animate-pulse">Confirm Booking</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-info">
+            <div class="container">
+                <h2 class="section-title animate-fade-up">What to Expect</h2>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card animate-fade-up animate-delay-400">
+                        <div class="info-icon">
+                            <i class="fas fa-laptop animate-pulse-subtle"></i>
+                        </div>
+                        <h3>Online Consultation</h3>
+                        <p>All consultations are conducted via video call (Zoom, Google Meet, or WhatsApp) or phone call, based on your preference. You'll receive connection details after booking.</p>
+                    </div>
+                    <div class="info-card animate-fade-up animate-delay-600">
+                        <div class="info-icon">
+                            <i class="fas fa-credit-card animate-pulse-subtle"></i>
+                        </div>
+                        <h3>Payment</h3>
+                        <p>Payment is processed securely at the time of booking. We accept all major credit cards, PayPal, and bank transfers. A receipt will be emailed to you immediately.</p>
+                    </div>
+                    <div class="info-card animate-fade-up animate-delay-800">
+                        <div class="info-icon">
+                            <i class="fas fa-file-alt animate-pulse-subtle"></i>
+                        </div>
+                        <h3>Follow-Up Materials</h3>
+                        <p>After your consultation, you'll receive a summary of key insights, recommendations, and any charts or diagrams discussed during the session via email.</p>
+                    </div>
+                    <div class="info-card animate-fade-up animate-delay-1000">
+                        <div class="info-icon">
+                            <i class="fas fa-calendar-alt animate-pulse-subtle"></i>
+                        </div>
+                        <h3>Rescheduling</h3>
+                        <p>Need to reschedule? No problem. You can change your appointment up to 24 hours before the scheduled time at no additional cost.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-fade-up">
+                    <h2>Questions About Booking?</h2>
+                    <div class="divider animate-fade-up animate-delay-200">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                        <span class="divider-line"></span>
+                    </div>
+                    <p class="animate-fade-up animate-delay-400">If you have any questions or need assistance with booking, please don't hesitate to contact us.</p>
+                    <a href="contact.html" class="btn primary-btn animate-fade-up animate-delay-600 animate-pulse">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" style="flex: 1.5; min-width: 250px; text-align: left;">
+                    <h3 style="color: var(--primary-color); display: flex; align-items: center; gap: 8px; font-size: 1.8rem;"><i class="fas fa-star"></i>Astro90</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 10px; color: var(--text-muted);">Astro90 is a premium Vedic Astrology platform delivering scientific, myth-free planetary pattern analysis, daily Panchangs, Guna Milan matching, and remedial gemstone recommendations to seekers globally.</p>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="horoscope.html">Horoscope</a></li>
+                        <li><a href="kundli.html">Kundli</a></li>
+                        <li><a href="matching.html">Matching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Core Tools</h4>
+                    <ul>
+                        <li><a href="panchang.html">Panchang</a></li>
+                        <li><a href="numerology.html">Numerology</a></li>
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="remedies.html">Remedies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" style="flex: 1.2; min-width: 200px;">
+                    <h4>Contact Support</h4>
+                    <p><i class="fas fa-envelope"></i> support@astro90.com</p>
+                    <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astro90. All Rights Reserved. Designed for scientific, myth-free Vedic consultation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
+
+

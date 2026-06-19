@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Horoscope & Zodiac Calculator - Astro90</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 6px;"></i>Astro90</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="horoscope.html" class="active">Horoscope</a></li>
+                    <li><a href="kundli.html">Kundli</a></li>
+                    <li><a href="matching.html">Matching</a></li>
+                    <li><a href="panchang.html">Panchang</a></li>
+                    <li><a href="numerology.html">Numerology</a></li>
+                    <li><a href="tarot.html">Tarot</a></li>
+                    <li><a href="remedies.html">Remedies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="animate-fade-up">Daily Horoscope</h1>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="animate-fade-up animate-delay-400">Discover what the celestial movements tell about your day, career, love, and health.</p>
+            </div>
+        </section>
+
+        <!-- Image & Intro Section -->
+        <section class="zodiac-intro-section">
+            <div class="container">
+                <div class="reveal-image" style="opacity: 1; transform: scale(1);">
+                    <img src="images/zodiac_wheel.png" alt="Celestial Zodiac Wheel" class="zodiac-wheel-img animate-spin-slow">
+                </div>
+                <div class="section-intro" style="margin-top: 2rem;">
+                    <h2>Explore the Cosmos Within You</h2>
+                    <p>Vedic Astrology defines the alignment of the stars at your birth as a roadmap for your consciousness. By calculating your Sun sign and checking daily planetary transits, you can align your actions with cosmic energies for smoother progress in life.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zodiac Sign Calculator Form -->
+        <section class="astro-calc-section">
+            <div class="container">
+                <div class="astro-form-card animate-fade-up">
+                    <h2 style="text-align: center; margin-bottom: 1rem;">Find Your Zodiac Sign</h2>
+                    <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">Enter your date of birth to discover your zodiac sign and get key cosmic insights.</p>
+                    
+                    <form id="zodiac-calc-form">
+                        <div class="astro-form-group">
+                            <label for="dob-input">Select Date of Birth</label>
+                            <input type="date" id="dob-input" class="astro-input" required>
+                        </div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button type="submit" class="btn primary-btn" style="width: 100%; max-width: 300px;">Calculate Sign</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="zodiac-calc-result-container" id="zodiac-calc-result">
+                    <!-- Dynamic Result Card Appends Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Zodiac Explorer Grid -->
+        <section class="zodiac-explorer-section">
+            <div class="container">
+                <h2 class="section-title">The Twelve Zodiac Signs</h2>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-moon"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-intro">Click on your zodiac sign below to explore detailed personality traits, strengths, compatibility, and custom daily forecasts.</p>
+
+                <div class="zodiac-grid">
+                    <!-- Aries -->
+                    <div class="zodiac-grid-card" data-sign="Aries">
+                        <div class="zodiac-card-icon"><i class="fas fa-gopuram"></i></div>
+                        <h3>Aries</h3>
+                        <span class="zodiac-meta-span">Mar 21 - Apr 19</span>
+                        <span class="zodiac-element-badge fire">Fire</span>
+                    </div>
+
+                    <!-- Taurus -->
+                    <div class="zodiac-grid-card" data-sign="Taurus">
+                        <div class="zodiac-card-icon"><i class="fas fa-pastafarianism"></i></div>
+                        <h3>Taurus</h3>
+                        <span class="zodiac-meta-span">Apr 20 - May 20</span>
+                        <span class="zodiac-element-badge earth">Earth</span>
+                    </div>
+
+                    <!-- Gemini -->
+                    <div class="zodiac-grid-card" data-sign="Gemini">
+                        <div class="zodiac-card-icon"><i class="fas fa-user-friends"></i></div>
+                        <h3>Gemini</h3>
+                        <span class="zodiac-meta-span">May 21 - Jun 20</span>
+                        <span class="zodiac-element-badge air">Air</span>
+                    </div>
+
+                    <!-- Cancer -->
+                    <div class="zodiac-grid-card" data-sign="Cancer">
+                        <div class="zodiac-card-icon"><i class="fas fa-water"></i></div>
+                        <h3>Cancer</h3>
+                        <span class="zodiac-meta-span">Jun 21 - Jul 22</span>
+                        <span class="zodiac-element-badge water">Water</span>
+                    </div>
+
+                    <!-- Leo -->
+                    <div class="zodiac-grid-card" data-sign="Leo">
+                        <div class="zodiac-card-icon"><i class="fas fa-crown"></i></div>
+                        <h3>Leo</h3>
+                        <span class="zodiac-meta-span">Jul 23 - Aug 22</span>
+                        <span class="zodiac-element-badge fire">Fire</span>
+                    </div>
+
+                    <!-- Virgo -->
+                    <div class="zodiac-grid-card" data-sign="Virgo">
+                        <div class="zodiac-card-icon"><i class="fas fa-hands-praying"></i></div>
+                        <h3>Virgo</h3>
+                        <span class="zodiac-meta-span">Aug 23 - Sep 22</span>
+                        <span class="zodiac-element-badge earth">Earth</span>
+                    </div>
+
+                    <!-- Libra -->
+                    <div class="zodiac-grid-card" data-sign="Libra">
+                        <div class="zodiac-card-icon"><i class="fas fa-balance-scale"></i></div>
+                        <h3>Libra</h3>
+                        <span class="zodiac-meta-span">Sep 23 - Oct 22</span>
+                        <span class="zodiac-element-badge air">Air</span>
+                    </div>
+
+                    <!-- Scorpio -->
+                    <div class="zodiac-grid-card" data-sign="Scorpio">
+                        <div class="zodiac-card-icon"><i class="fas fa-spider"></i></div>
+                        <h3>Scorpio</h3>
+                        <span class="zodiac-meta-span">Oct 23 - Nov 21</span>
+                        <span class="zodiac-element-badge water">Water</span>
+                    </div>
+
+                    <!-- Sagittarius -->
+                    <div class="zodiac-grid-card" data-sign="Sagittarius">
+                        <div class="zodiac-card-icon"><i class="fas fa-location-arrow"></i></div>
+                        <h3>Sagittarius</h3>
+                        <span class="zodiac-meta-span">Nov 22 - Dec 21</span>
+                        <span class="zodiac-element-badge fire">Fire</span>
+                    </div>
+
+                    <!-- Capricorn -->
+                    <div class="zodiac-grid-card" data-sign="Capricorn">
+                        <div class="zodiac-card-icon"><i class="fas fa-mountain"></i></div>
+                        <h3>Capricorn</h3>
+                        <span class="zodiac-meta-span">Dec 22 - Jan 19</span>
+                        <span class="zodiac-element-badge earth">Earth</span>
+                    </div>
+
+                    <!-- Aquarius -->
+                    <div class="zodiac-grid-card" data-sign="Aquarius">
+                        <div class="zodiac-card-icon"><i class="fas fa-wind"></i></div>
+                        <h3>Aquarius</h3>
+                        <span class="zodiac-meta-span">Jan 20 - Feb 18</span>
+                        <span class="zodiac-element-badge air">Air</span>
+                    </div>
+
+                    <!-- Pisces -->
+                    <div class="zodiac-grid-card" data-sign="Pisces">
+                        <div class="zodiac-card-icon"><i class="fas fa-fish"></i></div>
+                        <h3>Pisces</h3>
+                        <span class="zodiac-meta-span">Feb 19 - Mar 20</span>
+                        <span class="zodiac-element-badge water">Water</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zodiac Details Modal -->
+        <div class="zodiac-modal-overlay" id="zodiac-modal">
+            <div class="zodiac-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header-banner">
+                    <h2 id="modal-sign-title">Zodiac Sign</h2>
+                    <p class="modal-subtitle">Cosmic Analysis & Daily Forecast</p>
+                </div>
+                <div class="modal-body-container">
+                    <div class="modal-grid-two">
+                        <!-- Left Info Box: Planetary Metadata & Traits -->
+                        <div class="modal-info-box modal-traits-list">
+                            <h3>Astrological Profile</h3>
+                            <p><strong>Element:</strong> <span id="modal-element">Fire</span></p>
+                            <p><strong>Ruling Planet:</strong> <span id="modal-ruler">Mars</span></p>
+                            <p><strong>Symbol:</strong> <span id="modal-symbol">Ram</span></p>
+                            <p><strong>Lucky Number:</strong> <span id="modal-number">9</span></p>
+                            <p><strong>Lucky Color:</strong> <span id="modal-color">Red</span></p>
+                            <p><strong>Best Compatibility:</strong> <span id="modal-compatibility">Leo, Sagittarius</span></p>
+                            <p style="margin-top: 1.5rem;"><strong>Strengths:</strong> <span id="modal-traits" style="color: var(--dark-text);">Energetic, positive...</span></p>
+                            <p><strong>Weaknesses:</strong> <span id="modal-weaknesses" style="color: var(--dark-text);">Impatient, impulsive...</span></p>
+                        </div>
+                        
+                        <!-- Right Info Box: Daily Forecast -->
+                        <div class="modal-info-box modal-predictions-list">
+                            <h3>Today's Predictions</h3>
+                            <div>
+                                <strong><i class="fas fa-heart"></i> Love & Relationships</strong>
+                                <p id="pred-love">Forecast details loading...</p>
+                            </div>
+                            <div>
+                                <strong><i class="fas fa-briefcase"></i> Career & Business</strong>
+                                <p id="pred-career">Forecast details loading...</p>
+                            </div>
+                            <div>
+                                <strong><i class="fas fa-heartbeat"></i> Health & Wellness</strong>
+                                <p id="pred-health">Forecast details loading...</p>
+                            </div>
+                            <div>
+                                <strong><i class="fas fa-wallet"></i> Finance & Wealth</strong>
+                                <p id="pred-finance">Forecast details loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="book-online.html" class="btn primary-btn">Book Detailed Reading for this Sign</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" style="flex: 1.5; min-width: 250px; text-align: left;">
+                    <h3 style="color: var(--primary-color); display: flex; align-items: center; gap: 8px; font-size: 1.8rem;"><i class="fas fa-star"></i>Astro90</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 10px; color: var(--text-muted);">Astro90 is a premium Vedic Astrology platform delivering scientific, myth-free planetary pattern analysis, daily Panchangs, Guna Milan matching, and remedial gemstone recommendations to seekers globally.</p>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="horoscope.html">Horoscope</a></li>
+                        <li><a href="kundli.html">Kundli</a></li>
+                        <li><a href="matching.html">Matching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Core Tools</h4>
+                    <ul>
+                        <li><a href="panchang.html">Panchang</a></li>
+                        <li><a href="numerology.html">Numerology</a></li>
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="remedies.html">Remedies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" style="flex: 1.2; min-width: 200px;">
+                    <h4>Contact Support</h4>
+                    <p><i class="fas fa-envelope"></i> support@astro90.com</p>
+                    <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astro90. All Rights Reserved. Designed for scientific, myth-free Vedic consultation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/astrology-features.js"></script>
+</body>
+</html>
+
+

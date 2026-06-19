@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro90 Sid - Professional Vedic Astrology & Consultation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 6px;"></i>Astro90</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="horoscope.html">Horoscope</a></li>
+                    <li><a href="kundli.html">Kundli</a></li>
+                    <li><a href="matching.html">Matching</a></li>
+                    <li><a href="panchang.html">Panchang</a></li>
+                    <li><a href="numerology.html">Numerology</a></li>
+                    <li><a href="tarot.html">Tarot</a></li>
+                    <li><a href="remedies.html">Remedies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="min-height: 85vh; padding-top: 100px;">
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 3rem;">
+                <div class="hero-content" style="max-width: 600px;">
+                    <h1 class="animate-fade-up">Astro90 Astrology Portal</h1>
+                    <div class="divider animate-fade-up animate-delay-200">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                        <span class="divider-line"></span>
+                    </div>
+                    <p class="animate-fade-up animate-delay-400">Welcome to the world's premium Vedic Astrology platform. Consult verified professionals, examine your birth chart D1/D9/D10 calculations, and resolve your life bottlenecks using scientific pattern analysis.</p>
+                    
+                    <div class="cta-buttons animate-fade-up animate-delay-600" style="margin-top: 2rem; flex-wrap: wrap;">
+                        <a href="kundli.html" class="btn primary-btn"><i class="fas fa-dharmachakra"></i> Free Kundli</a>
+                        <a href="matching.html" class="btn secondary-btn"><i class="fas fa-heart"></i> Guna Milan Match</a>
+                        <a href="ai-chat.html" class="btn primary-btn" style="background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));"><i class="fas fa-robot"></i> Ask AI Astrologer</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in animate-delay-800">
+                    <img src="images/zodiac_wheel.png" alt="Celestial Zodiac Wheel" class="floating animate-spin-slow" style="max-width: 400px; filter: drop-shadow(0 0 15px rgba(247, 148, 29, 0.45));">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Dashboard -->
+        <section class="quick-tools-section" style="background-color: rgba(247, 148, 29, 0.04); padding: 4rem 0; border-top: 1px solid rgba(247, 148, 29, 0.15);">
+            <div class="container">
+                <h2 class="section-title">Core Astrology Engines</h2>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-star"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                
+                <div class="zodiac-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                    <a href="kundli.html" class="zodiac-grid-card">
+                        <div class="zodiac-card-icon"><i class="fas fa-dharmachakra"></i></div>
+                        <h3>Birth Chart</h3>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">D1, D9, D10 SVGs</span>
+                    </a>
+                    <a href="matching.html" class="zodiac-grid-card">
+                        <div class="zodiac-card-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Kundli Matching</h3>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">36 Gunas Score</span>
+                    </a>
+                    <a href="panchang.html" class="zodiac-grid-card">
+                        <div class="zodiac-card-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Panchang Today</h3>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Tithi & Rahu Kaal</span>
+                    </a>
+                    <a href="numerology.html" class="zodiac-grid-card">
+                        <div class="zodiac-card-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Numerology</h3>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Life Path & Phone</span>
+                    </a>
+                    <a href="tarot.html" class="zodiac-grid-card">
+                        <div class="zodiac-card-icon"><i class="fas fa-hat-wizard"></i></div>
+                        <h3>Interactive Tarot</h3>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">3-Card Readings</span>
+                    </a>
+                    <a href="ai-chat.html" class="zodiac-grid-card">
+                        <div class="zodiac-card-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Astrologer</h3>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Instant Transits Chat</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Today's Panchang & Horoscope Highlights -->
+        <section class="daily-forecasts" style="padding: 5rem 0;">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem;">
+                <!-- Panchang Preview Widget -->
+                <div class="panchang-widget animate-fade-left">
+                    <h3 style="margin-bottom: 1.5rem;"><i class="far fa-calendar-check" style="color: var(--primary-color);"></i> Today's Shubh Coordinates</h3>
+                    <div class="chart-user-meta" style="padding: 2rem; border-radius: var(--border-radius); border-color: var(--primary-color);">
+                        <div class="chart-meta-item">
+                            <span class="chart-meta-label">Today's Tithi:</span>
+                            <span class="chart-meta-val">Shukla Panchami</span>
+                        </div>
+                        <div class="chart-meta-item">
+                            <span class="chart-meta-label">Nakshatra:</span>
+                            <span class="chart-meta-val">Rohini Star</span>
+                        </div>
+                        <div class="chart-meta-item">
+                            <span class="chart-meta-label">Rahu Kaal:</span>
+                            <span class="chart-meta-val" style="color: #ff5233; font-weight: bold;">03:00 PM - 04:30 PM</span>
+                        </div>
+                        <div class="chart-meta-item">
+                            <span class="chart-meta-label">Auspicious Abhijit:</span>
+                            <span class="chart-meta-val" style="color: #2e7d32; font-weight: bold;">11:45 AM - 12:35 PM</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem; text-align: center;">
+                        <a href="panchang.html" class="btn secondary-btn">View Full Panchang & Muhurats</a>
+                    </div>
+                </div>
+
+                <!-- Daily Rashifal Selector -->
+                <div class="rashifal-panel animate-fade-right">
+                    <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-sun" style="color: var(--primary-color);"></i> Daily Rashis (Horoscopes)</h3>
+                    <p style="margin-bottom: 2rem; color: var(--text-muted);">Select your sun sign below to view immediate predictions relating to love, career, health, and finance.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Aries')">Aries</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Taurus')">Taurus</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Gemini')">Gemini</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Cancer')">Cancer</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Leo')">Leo</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Virgo')">Virgo</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Libra')">Libra</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Scorpio')">Scorpio</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Sagittarius')">Sagittarius</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Capricorn')">Capricorn</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Aquarius')">Aquarius</button>
+                        <button class="btn secondary-btn view-daily-rashi" style="padding: 10px 5px; font-size: 0.85rem;" onclick="openZodiacModal('Pisces')">Pisces</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Verified Astrologers -->
+        <section class="astrologers-section" style="background-color: rgba(247, 148, 29, 0.04); padding: 5rem 0; border-top: 1px solid rgba(247, 148, 29, 0.15);">
+            <div class="container">
+                <h2 class="section-title">Verified Astro90 Astrologers</h2>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-user-tie"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-intro">Connect phonically or by chat with verified professionals holding over a decade of astrological auditing experience.</p>
+
+                <div class="astrologer-grid">
+                    <!-- Astrologer 1 -->
+                    <div class="astrologer-card">
+                        <div class="astro-avatar">
+                            <img src="images/sid-profile.png" alt="Siddharth - Chief Astrologer">
+                        </div>
+                        <h3>Siddharth (Sid)</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 5px;">Chief Vedic Consultant & Auditor</p>
+                        <div class="astro-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span style="color: var(--dark-text); font-size: 0.85rem; margin-left: 5px;">5.0 (1200+ consultations)</span>
+                        </div>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Specializes in scientific house coordinates, career path pivots, audit analysis, and Mangal remedies.</p>
+                        <a href="services.html" class="astro-consult-btn">Call Sid ($2.0/min)</a>
+                    </div>
+
+                    <!-- Astrologer 2 -->
+                    <div class="astrologer-card">
+                        <div class="astro-avatar">
+                            <img src="images/abpooja.webp" alt="Shastri Ji - Pooja Expert">
+                        </div>
+                        <h3>Acharya Shastri Ji</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 5px;">Pooja & Guna Milan Specialist</p>
+                        <div class="astro-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span style="color: var(--dark-text); font-size: 0.85rem; margin-left: 5px;">4.8 (850+ consultations)</span>
+                        </div>
+                        <p style="font-size: 0.85rem; line-height: 1.5;">Specialist in marriage matching, planetary energizations, Kaal Sarp and Pitra Dosha pujas.</p>
+                        <a href="services.html" class="astro-consult-btn">Call Shastri ($1.8/min)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-preview" style="padding: 5rem 0;">
+            <div class="container">
+                <h2 class="section-title">Verified Reviews</h2>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-quote-left"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>Sid's career guidance was audit-grade. The pattern analysis accurately predicted a major pivot. Highly recommended!</p>
+                            <div class="client-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Melbourne, Australia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zodiac Details Modal Overlay (Used by Horoscope grid) -->
+        <div class="zodiac-modal-overlay" id="zodiac-modal">
+            <div class="zodiac-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header-banner">
+                    <h2 id="modal-sign-title">Zodiac Sign</h2>
+                    <p class="modal-subtitle">Cosmic Analysis & Daily Forecast</p>
+                </div>
+                <div class="modal-body-container">
+                    <div class="modal-grid-two">
+                        <div class="modal-info-box modal-traits-list">
+                            <h3>Astrological Profile</h3>
+                            <p><strong>Element:</strong> <span id="modal-element">Fire</span></p>
+                            <p><strong>Ruling Planet:</strong> <span id="modal-ruler">Mars</span></p>
+                            <p><strong>Symbol:</strong> <span id="modal-symbol">Ram</span></p>
+                            <p><strong>Lucky Number:</strong> <span id="modal-number">9</span></p>
+                            <p><strong>Lucky Color:</strong> <span id="modal-color">Red</span></p>
+                            <p><strong>Best Compatibility:</strong> <span id="modal-compatibility">Leo, Sagittarius</span></p>
+                            <p style="margin-top: 1.5rem;"><strong>Strengths:</strong> <span id="modal-traits">Energetic...</span></p>
+                            <p><strong>Weaknesses:</strong> <span id="modal-weaknesses">Impatient...</span></p>
+                        </div>
+                        <div class="modal-info-box modal-predictions-list">
+                            <h3>Today's Predictions</h3>
+                            <div>
+                                <strong><i class="fas fa-heart"></i> Love & Relationships</strong>
+                                <p id="pred-love">Loading...</p>
+                            </div>
+                            <div>
+                                <strong><i class="fas fa-briefcase"></i> Career & Business</strong>
+                                <p id="pred-career">Loading...</p>
+                            </div>
+                            <div>
+                                <strong><i class="fas fa-heartbeat"></i> Health & Wellness</strong>
+                                <p id="pred-health">Loading...</p>
+                            </div>
+                            <div>
+                                <strong><i class="fas fa-wallet"></i> Finance & Wealth</strong>
+                                <p id="pred-finance">Loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" style="flex: 1.5; min-width: 250px; text-align: left;">
+                    <h3 style="color: var(--primary-color); display: flex; align-items: center; gap: 8px; font-size: 1.8rem;"><i class="fas fa-star"></i>Astro90</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 10px; color: var(--text-muted);">Astro90 is a premium Vedic Astrology platform delivering scientific, myth-free planetary pattern analysis, daily Panchangs, Guna Milan matching, and remedial gemstone recommendations to seekers globally.</p>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="horoscope.html">Horoscope</a></li>
+                        <li><a href="kundli.html">Kundli</a></li>
+                        <li><a href="matching.html">Matching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Core Tools</h4>
+                    <ul>
+                        <li><a href="panchang.html">Panchang</a></li>
+                        <li><a href="numerology.html">Numerology</a></li>
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="remedies.html">Remedies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" style="flex: 1.2; min-width: 200px;">
+                    <h4>Contact Support</h4>
+                    <p><i class="fas fa-envelope"></i> support@astro90.com</p>
+                    <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astro90. All Rights Reserved. Designed for scientific, myth-free Vedic consultation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/astrology-features.js"></script>
+</body>
+</html>
+
+

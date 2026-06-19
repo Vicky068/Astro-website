@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedic Remedies & Gemstone Recommendations - Astro90</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 6px;"></i>Astro90</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="horoscope.html">Horoscope</a></li>
+                    <li><a href="kundli.html">Kundli</a></li>
+                    <li><a href="matching.html">Matching</a></li>
+                    <li><a href="panchang.html">Panchang</a></li>
+                    <li><a href="numerology.html">Numerology</a></li>
+                    <li><a href="tarot.html">Tarot</a></li>
+                    <li><a href="remedies.html" class="active">Remedies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="animate-fade-up">Gemstones & Remedies</h1>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-gem animate-spin-slow"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="animate-fade-up animate-delay-400">Discover Vedic remedies, mantras, and gemstones to align planetary energies and resolve life challenges.</p>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="zodiac-intro-section" style="padding-bottom: 2rem;">
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2>Vedic Remedies & Healing Crystals</h2>
+                    <p>In Vedic Astrology, planets emit light waves of specific frequencies. When a planet is weak in your birth chart, wearing its corresponding gemstone acts as a cosmic prism, focusing positive cosmic energy to correct biological and situational frequencies. Combined with sacred sounds (Mantras) and selfless activities, remedies help you remove obstacles and achieve peace.</p>
+                </div>
+                <div class="reveal-image" style="flex: 1; min-width: 300px; text-align: center;">
+                    <img src="images/healing_gemstones.png" alt="Healing Crystals and Gemstones" class="zodiac-wheel-img" style="border-radius: 12px; max-width: 400px; filter: drop-shadow(0 0 10px rgba(0,0,0,0.15));">
+                </div>
+            </div>
+        </section>
+
+        <!-- Gemstone Recommendation Wizard Section -->
+        <section class="astro-calc-section" style="border-top: 1px solid rgba(247, 148, 29, 0.15);">
+            <div class="container">
+                <h2 class="section-title">Gemstone Recommendation Wizard</h2>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-cog"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-intro" style="margin-bottom: 3rem;">Find out which gemstone is suitable for you based on your zodiac sign and current life goals.</p>
+
+                <div class="wizard-card">
+                    <!-- Progress Bar -->
+                    <div class="wizard-progress">
+                        <div class="progress-step active" data-step="1">1</div>
+                        <div class="progress-step" data-step="2">2</div>
+                        <div class="progress-step" data-step="3">3</div>
+                    </div>
+
+                    <!-- Step 1: Select Zodiac Sign -->
+                    <div class="wizard-step active" id="step-1">
+                        <h3 style="margin-bottom: 1.5rem;">Step 1: Select Your Zodiac Sign</h3>
+                        <div class="zodiac-options-grid">
+                            <div class="option-card" data-step-name="zodiac" data-value="Aries"><i class="fas fa-gopuram"></i><span>Aries</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Taurus"><i class="fas fa-pastafarianism"></i><span>Taurus</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Gemini"><i class="fas fa-user-friends"></i><span>Gemini</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Cancer"><i class="fas fa-water"></i><span>Cancer</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Leo"><i class="fas fa-crown"></i><span>Leo</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Virgo"><i class="fas fa-hands-praying"></i><span>Virgo</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Libra"><i class="fas fa-balance-scale"></i><span>Libra</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Scorpio"><i class="fas fa-spider"></i><span>Scorpio</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Sagittarius"><i class="fas fa-location-arrow"></i><span>Sagittarius</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Capricorn"><i class="fas fa-mountain"></i><span>Capricorn</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Aquarius"><i class="fas fa-wind"></i><span>Aquarius</span></div>
+                            <div class="option-card" data-step-name="zodiac" data-value="Pisces"><i class="fas fa-fish"></i><span>Pisces</span></div>
+                        </div>
+                        <div class="wizard-navigation">
+                            <button class="btn primary-btn wizard-next" disabled>Next Step <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Select Area of Focus -->
+                    <div class="wizard-step" id="step-2">
+                        <h3 style="margin-bottom: 1.5rem;">Step 2: What area of life do you want to improve?</h3>
+                        <div class="options-grid">
+                            <div class="option-card" data-step-name="goal" data-value="wealth"><i class="fas fa-coins"></i><span>Wealth & Career</span></div>
+                            <div class="option-card" data-step-name="goal" data-value="health"><i class="fas fa-heartbeat"></i><span>Health & Vitality</span></div>
+                            <div class="option-card" data-step-name="goal" data-value="relationship"><i class="fas fa-heart"></i><span>Relationships</span></div>
+                            <div class="option-card" data-step-name="goal" data-value="focus"><i class="fas fa-graduation-cap"></i><span>Study & Focus</span></div>
+                            <div class="option-card" data-step-name="goal" data-value="peace"><i class="fas fa-peace"></i><span>Peace of Mind</span></div>
+                        </div>
+                        <div class="wizard-navigation">
+                            <button class="btn secondary-btn wizard-prev"><i class="fas fa-chevron-left"></i> Previous</button>
+                            <button class="btn primary-btn wizard-next" disabled>Next Step <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Select Challenges -->
+                    <div class="wizard-step" id="step-3">
+                        <h3 style="margin-bottom: 1.5rem;">Step 3: What is the primary obstacle you are facing?</h3>
+                        <div class="options-grid">
+                            <div class="option-card" data-step-name="challenge" data-value="block"><i class="fas fa-ban"></i><span>Career Blocks</span></div>
+                            <div class="option-card" data-step-name="challenge" data-value="stress"><i class="fas fa-brain"></i><span>Anxiety & Stress</span></div>
+                            <div class="option-card" data-step-name="challenge" data-value="conflict"><i class="fas fa-user-slash"></i><span>Fights / Conflicts</span></div>
+                            <div class="option-card" data-step-name="challenge" data-value="laziness"><i class="fas fa-bed"></i><span>Procrastination</span></div>
+                            <div class="option-card" data-step-name="challenge" data-value="illness"><i class="fas fa-ambulance"></i><span>Frequent Illness</span></div>
+                        </div>
+                        <div class="wizard-navigation">
+                            <button class="btn secondary-btn wizard-prev"><i class="fas fa-chevron-left"></i> Previous</button>
+                            <button class="btn primary-btn" id="wizard-submit" disabled>Get Recommendation <i class="fas fa-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wizard Recommendation Result -->
+                <div class="wizard-result-container" id="wizard-result-section">
+                    <!-- Dynamic Result Card Appends Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthstone Finder Section -->
+        <section class="birthstone-section" style="padding: 5rem 0; border-top: 1px solid rgba(247, 148, 29, 0.15);">
+            <div class="container">
+                <h2 class="section-title">Vedic Birthstone Finder</h2>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-ring"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                
+                <div class="astro-form-card animate-fade-up" style="max-width: 500px; margin-bottom: 3rem;">
+                    <div class="astro-form-group">
+                        <label for="birth-month">Select Month of Birth</label>
+                        <select id="birth-month" class="astro-input">
+                            <option value="">-- Choose Month --</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <button class="btn primary-btn" id="find-birthstone-btn" style="width: 100%; margin-top: 10px;">Find Lucky Birthstone</button>
+                </div>
+
+                <div id="birthstone-result-container" class="animate-fade-in" style="max-width: 600px; margin: 0 auto;"></div>
+            </div>
+        </section>
+
+        <!-- General Vedic Remedies Directory -->
+        <section class="remedies-directory-section" style="padding-top: 5rem; border-top: 1px solid rgba(247, 148, 29, 0.15);">
+            <div class="container">
+                <h2 class="section-title">Vedic Planetary Remedies</h2>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-hands"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+
+                <div class="remedies-grid">
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-sun"></i> Sun (Surya)</h3>
+                        <p><strong>Practice:</strong> Offer water to rising Sun (Arghya), respect father.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Suryaya Namaha"</em> (108 times at sunrise).</p>
+                    </div>
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-moon"></i> Moon (Chandra)</h3>
+                        <p><strong>Practice:</strong> Drink from silver cup, avoid wasting water, respect mother.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Chandraya Namaha"</em> (108 times at evening).</p>
+                    </div>
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-fire"></i> Mars (Mangal)</h3>
+                        <p><strong>Practice:</strong> Donate red lentils on Tuesdays, do physical activity.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Angarakaya Namaha"</em> (108 times on Tuesdays).</p>
+                    </div>
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-feather-alt"></i> Mercury (Budha)</h3>
+                        <p><strong>Practice:</strong> Feed green grass to cows, cultivate leafy plants.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Budhaya Namaha"</em> (108 times on Wednesdays).</p>
+                    </div>
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-university"></i> Jupiter (Guru)</h3>
+                        <p><strong>Practice:</strong> Respect gurus/teachers, donate yellow foods on Thursdays.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Gurave Namaha"</em> (108 times).</p>
+                    </div>
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-palette"></i> Venus (Shukra)</h3>
+                        <p><strong>Practice:</strong> Cleanliness, wear white clothes, respect partners.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Shukraya Namaha"</em> (108 times on Fridays).</p>
+                    </div>
+                    <div class="remedy-card">
+                        <h3><i class="fas fa-balance-scale-right"></i> Saturn (Shani)</h3>
+                        <p><strong>Practice:</strong> Help laborers, servants, avoid lying, light oil lamp on Saturdays.</p>
+                        <p><strong>Mantra:</strong> <em>"Om Sham Shanishcharaya Namaha"</em> (108 times).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" style="flex: 1.5; min-width: 250px; text-align: left;">
+                    <h3 style="color: var(--primary-color); display: flex; align-items: center; gap: 8px; font-size: 1.8rem;"><i class="fas fa-star"></i>Astro90</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 10px; color: var(--text-muted);">Astro90 is a premium Vedic Astrology platform delivering scientific, myth-free planetary pattern analysis, daily Panchangs, Guna Milan matching, and remedial gemstone recommendations to seekers globally.</p>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="horoscope.html">Horoscope</a></li>
+                        <li><a href="kundli.html">Kundli</a></li>
+                        <li><a href="matching.html">Matching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Core Tools</h4>
+                    <ul>
+                        <li><a href="panchang.html">Panchang</a></li>
+                        <li><a href="numerology.html">Numerology</a></li>
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="remedies.html">Remedies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" style="flex: 1.2; min-width: 200px;">
+                    <h4>Contact Support</h4>
+                    <p><i class="fas fa-envelope"></i> support@astro90.com</p>
+                    <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astro90. All Rights Reserved. Designed for scientific, myth-free Vedic consultation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/astrology-features.js"></script>
+    <script>
+        // Inline Birthstone Finder Logic
+        const findStoneBtn = document.getElementById('find-birthstone-btn');
+        const monthSelect = document.getElementById('birth-month');
+        const stoneResult = document.getElementById('birthstone-result-container');
+
+        const stones = {
+            1: { name: "Hessonite (Gomed)", planet: "Rahu", color: "Honey Brown", desc: "January birthstone. Enhances focus, shields from sudden setbacks, and clears Rahu blockages." },
+            2: { name: "Amethyst (Katela)", planet: "Saturn", color: "Purple", desc: "February birthstone. Brings sobriety, peace, spiritual elevation, and protection against bad habits." },
+            3: { name: "Aquamarine", planet: "Saturn", color: "Light Blue", desc: "March birthstone. Enhances communication, analytical abilities, and reduces travels friction." },
+            4: { name: "Diamond (Heera)", planet: "Venus", color: "White/Clear", desc: "April birthstone. Promotes luxuries, vehicle comfort, beauty, romance, and attraction." },
+            5: { name: "Emerald (Panna)", planet: "Mercury", color: "Green", desc: "May birthstone. Calms nervous system, boosts logic, speech, exam calculations, and trading success." },
+            6: { name: "Pearl (Moti)", planet: "Moon", color: "White", desc: "June birthstone. Soothes emotional stress, anxiety, cures sleep disturbances, and aligns relation with mother." },
+            7: { name: "Ruby (Manik)", planet: "Sun", color: "Red", desc: "July birthstone. Brings immense confidence, father's status, leadership authority, and vital energy." },
+            8: { name: "Peridot", planet: "Mercury", color: "Olive Green", desc: "August birthstone. Inspires creative flow, financial security, and resolves logical calculation errors." },
+            9: { name: "Blue Sapphire (Neelam)", planet: "Saturn", color: "Deep Blue", desc: "September birthstone. Saturn's powerful frequency. Brings instant success in mechanical work, authority, and safety." },
+            10: { name: "White Opal", planet: "Venus", color: "Opal", desc: "October birthstone. Enhances aesthetic intelligence, beauty comfort, and public status." },
+            11: { name: "Yellow Sapphire (Pukhraj)", planet: "Jupiter", color: "Yellow", desc: "November birthstone. Ultimate spiritual and marital blessing stone. Brings kids, wealth, and massive fortunes." },
+            12: { name: "Turquoise (Firoza)", planet: "Jupiter", color: "Turquoise", desc: "December birthstone. Protection stone. Clears toxins, aligns health coordinates, and stabilizes travels." }
+        };
+
+        if (findStoneBtn && monthSelect && stoneResult) {
+            findStoneBtn.addEventListener('click', () => {
+                const month = monthSelect.value;
+                if (!month) {
+                    stoneResult.innerHTML = "";
+                    return;
+                }
+                const stone = stones[month];
+                stoneResult.innerHTML = `
+                    <div class="result-card animate-fade-in">
+                        <h3>Your Birthstone is ${stone.name}</h3>
+                        <div class="result-grid" style="grid-template-columns: 1fr;">
+                            <div><strong>Ruling Planet:</strong> ${stone.planet}</div>
+                            <div><strong>Color Frequency:</strong> ${stone.color}</div>
+                        </div>
+                        <p style="text-align: left; margin-top: 15px; line-height:1.6;"><strong>Benefits:</strong> ${stone.desc}</p>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="book-online.html" class="btn primary-btn">Consult for Wearing Muhurat</a>
+                        </div>
+                    </div>
+                `;
+                stoneResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+        }
+    </script>
+</body>
+</html>
+
+

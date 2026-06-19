@@ -1,0 +1,266 @@
+&lt;!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Astro90</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 6px;"></i>Astro90</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="horoscope.html">Horoscope</a></li>
+                    <li><a href="kundli.html">Kundli</a></li>
+                    <li><a href="matching.html">Matching</a></li>
+                    <li><a href="panchang.html">Panchang</a></li>
+                    <li><a href="numerology.html">Numerology</a></li>
+                    <li><a href="tarot.html">Tarot</a></li>
+                    <li><a href="remedies.html">Remedies</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="animate-fade-up">Contact Us</h1>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="animate-fade-up animate-delay-400">Get in touch with Astro90 for inquiries, feedback, or to schedule a consultation</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info animate-fade-left">
+                        <h2>Get in Touch</h2>
+                        <div class="divider-small">
+                            <span class="divider-line"></span>
+                            <span class="divider-icon"><i class="fas fa-star animate-spin-slow"></i></span>
+                            <span class="divider-line"></span>
+                        </div>
+                        <p>Have questions or need more information about our services? We're here to help. Reach out to us using any of the methods below or fill out the contact form.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope animate-pulse-subtle"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>For general inquiries:</p>
+                                    <p>info@Astro90.com</p>
+                                    <p>For booking assistance:</p>
+                                    <p>bookings@Astro90.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt animate-pulse-subtle"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>Australia: +61 123 456 789</p>
+                                    <p>International: +1 987 654 3210</p>
+                                    <p>Available: Mon-Fri, 9am-6pm AEST</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt animate-pulse-subtle"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <p>Sydney, Australia</p>
+                                    <p>All consultations are conducted online</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <h3>Connect With Us</h3>
+                            <div class="social-icons-large">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container animate-fade-right">
+                        <h2>Send a Message</h2>
+                        <div class="divider-small">
+                            <span class="divider-line"></span>
+                            <span class="divider-icon"><i class="fas fa-star animate-spin-slow"></i></span>
+                            <span class="divider-line"></span>
+                        </div>
+                        <form id="contact-form" class="form-container">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn animate-pulse">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="faq-section animate-fade-up">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon"><i class="fas fa-sun animate-spin-slow"></i></span>
+                        <span class="divider-line"></span>
+                    </div>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I book a consultation?</h3>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can book a consultation through our online booking system on the "Book Online" page. Select your preferred service, date, and time, fill in your details, and complete the payment process. You'll receive a confirmation email with all the necessary information.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What information do you need for an accurate reading?</h3>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>For the most accurate reading, we need your date of birth, time of birth (as precise as possible), and place of birth. If you don't know your exact birth time, please mention this when booking, and we can discuss alternative approaches during your consultation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How are consultations conducted?</h3>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>All consultations are conducted online via video call (Zoom, Google Meet, or WhatsApp) or phone call, based on your preference. You'll receive connection details after booking. We serve clients worldwide, so we can accommodate different time zones.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What payment methods do you accept?</h3>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. Payment is processed securely at the time of booking, and you'll receive a receipt via email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I reschedule my appointment?</h3>
+                                <div class="faq-toggle">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, you can reschedule your appointment up to 24 hours before the scheduled time at no additional cost. Please use the rescheduling link in your confirmation email or contact us directly for assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" style="flex: 1.5; min-width: 250px; text-align: left;">
+                    <h3 style="color: var(--primary-color); display: flex; align-items: center; gap: 8px; font-size: 1.8rem;"><i class="fas fa-star"></i>Astro90</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 10px; color: var(--text-muted);">Astro90 is a premium Vedic Astrology platform delivering scientific, myth-free planetary pattern analysis, daily Panchangs, Guna Milan matching, and remedial gemstone recommendations to seekers globally.</p>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="horoscope.html">Horoscope</a></li>
+                        <li><a href="kundli.html">Kundli</a></li>
+                        <li><a href="matching.html">Matching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Core Tools</h4>
+                    <ul>
+                        <li><a href="panchang.html">Panchang</a></li>
+                        <li><a href="numerology.html">Numerology</a></li>
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="remedies.html">Remedies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" style="flex: 1.2; min-width: 200px;">
+                    <h4>Contact Support</h4>
+                    <p><i class="fas fa-envelope"></i> support@astro90.com</p>
+                    <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astro90. All Rights Reserved. Designed for scientific, myth-free Vedic consultation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
+
+

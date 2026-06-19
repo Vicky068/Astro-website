@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundli Matching (Guna Milan) - Astro90</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fas fa-star" style="color: var(--primary-color); margin-right: 6px;"></i>Astro90</a></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="horoscope.html">Horoscope</a></li>
+                    <li><a href="kundli.html">Kundli</a></li>
+                    <li><a href="matching.html" class="active">Matching</a></li>
+                    <li><a href="panchang.html">Panchang</a></li>
+                    <li><a href="numerology.html">Numerology</a></li>
+                    <li><a href="tarot.html">Tarot</a></li>
+                    <li><a href="remedies.html">Remedies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="animate-fade-up">Kundli Matching</h1>
+                <div class="divider animate-fade-up animate-delay-200">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon"><i class="fas fa-heart animate-spin-slow"></i></span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="animate-fade-up animate-delay-400">Vedic marriage compatibility calculation based on the 36 Guna Ashtakoot system and Manglik check.</p>
+            </div>
+        </section>
+
+        <!-- Input Form Section -->
+        <section class="matching-input-section" style="padding-bottom: 2rem;">
+            <div class="container">
+                <div class="astro-form-card animate-fade-up" style="max-width: 800px;">
+                    <h2 style="text-align: center; margin-bottom: 1rem;">Enter Partner Details</h2>
+                    <p style="text-align: center; margin-bottom: 2.5rem; color: var(--text-muted);">Traditional Milan calculates the compatibility coordinates between both birth stars.</p>
+                    
+                    <form id="matching-form">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                            <!-- Groom Details -->
+                            <div>
+                                <h3 style="border-bottom: 2px solid rgba(247, 148, 29, 0.2); padding-bottom: 8px; margin-bottom: 1.5rem; font-size: 1.4rem;"><i class="fas fa-mars"></i> Groom (Partner 1)</h3>
+                                <div class="astro-form-group">
+                                    <label for="boy-name">Groom's Name</label>
+                                    <input type="text" id="boy-name" class="astro-input" placeholder="Enter name" required>
+                                </div>
+                                <div class="astro-form-group">
+                                    <label for="boy-dob">Date of Birth</label>
+                                    <input type="date" id="boy-dob" class="astro-input" required>
+                                </div>
+                                <div class="astro-form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <div>
+                                        <label for="boy-tob">Time of Birth</label>
+                                        <input type="time" id="boy-tob" class="astro-input" required>
+                                    </div>
+                                    <div>
+                                        <label for="boy-pob">Place of Birth</label>
+                                        <input type="text" id="boy-pob" class="astro-input" placeholder="City" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bride Details -->
+                            <div>
+                                <h3 style="border-bottom: 2px solid rgba(247, 148, 29, 0.2); padding-bottom: 8px; margin-bottom: 1.5rem; font-size: 1.4rem;"><i class="fas fa-venus"></i> Bride (Partner 2)</h3>
+                                <div class="astro-form-group">
+                                    <label for="girl-name">Bride's Name</label>
+                                    <input type="text" id="girl-name" class="astro-input" placeholder="Enter name" required>
+                                </div>
+                                <div class="astro-form-group">
+                                    <label for="girl-dob">Date of Birth</label>
+                                    <input type="date" id="girl-dob" class="astro-input" required>
+                                </div>
+                                <div class="astro-form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <div>
+                                        <label for="girl-tob">Time of Birth</label>
+                                        <input type="time" id="girl-tob" class="astro-input" required>
+                                    </div>
+                                    <div>
+                                        <label for="girl-pob">Place of Birth</label>
+                                        <input type="text" id="girl-pob" class="astro-input" placeholder="City" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 3rem;">
+                            <button type="submit" class="btn primary-btn" style="width: 100%; max-width: 320px;">Calculate Horoscope Match</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section id="matching-result-section" style="display: none; padding-top: 2rem;">
+            <!-- Appended Dynamically by JS -->
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" style="flex: 1.5; min-width: 250px; text-align: left;">
+                    <h3 style="color: var(--primary-color); display: flex; align-items: center; gap: 8px; font-size: 1.8rem;"><i class="fas fa-star"></i>Astro90</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-top: 10px; color: var(--text-muted);">Astro90 is a premium Vedic Astrology platform delivering scientific, myth-free planetary pattern analysis, daily Panchangs, Guna Milan matching, and remedial gemstone recommendations to seekers globally.</p>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="horoscope.html">Horoscope</a></li>
+                        <li><a href="kundli.html">Kundli</a></li>
+                        <li><a href="matching.html">Matching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" style="flex: 1; min-width: 150px;">
+                    <h4>Core Tools</h4>
+                    <ul>
+                        <li><a href="panchang.html">Panchang</a></li>
+                        <li><a href="numerology.html">Numerology</a></li>
+                        <li><a href="tarot.html">Tarot</a></li>
+                        <li><a href="remedies.html">Remedies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" style="flex: 1.2; min-width: 200px;">
+                    <h4>Contact Support</h4>
+                    <p><i class="fas fa-envelope"></i> support@astro90.com</p>
+                    <p><i class="fas fa-phone"></i> +61 123 456 789</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Astro90. All Rights Reserved. Designed for scientific, myth-free Vedic consultation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/astrology-features.js"></script>
+</body>
+</html>
+
+
